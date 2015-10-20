@@ -1,0 +1,55 @@
+.main-content.lijsten {
+
+  /* General Styles */
+  h4 {
+    margin-bottom: 1em;
+  }
+  form {
+  	select {
+  		width: 50%;
+  	}
+  }
+  
+  form.add-item, form.add-list {
+    .form-item {
+      &.col-md-3 {
+        padding-left: 0;
+      }
+    }
+  }
+  
+  /* Add an item */
+  form.add-item {
+    ul.books {
+      margin-bottom: 2em;
+      padding: 0;
+      li.book {
+        list-style: none;
+        margin: 0;
+        margin-bottom: 1em;
+        padding: 0;
+        .title {
+          a {
+            color: $blue;
+            font-weight: bolder;
+          }
+        }
+        .author {
+          a {
+            color: $blue;
+          }
+        }
+      }
+    }
+  }
+  
+  /* List table */
+  .table.lijsten {
+    .row {
+      text-align: center;
+      .title {
+        text-align: left;
+      }
+    }
+  }
+}

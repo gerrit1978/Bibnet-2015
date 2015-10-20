@@ -98,52 +98,16 @@
 	    <div class="col-md-9 main-content lijsten">
 	      <div class="inner clearfix">
 	        <div class="col-md-8 alpha omega">
-	        	<h4>Item toevoegen</h4>
-					    <form method="post" class="add-item">
-					        <div class="form-item clearfix">
-						        <label class="col-md-3" for="voeg_toe">Voeg toe aan</label>
-						        <select class="col-md-5" class="form-select" name="voeg_toe" id="voeg_toe">
-						          <option value="default">-- nieuwe lijst --</option>
-						        </select>
+	        	<h4>Nieuwe lijst</h4>
+					    <form method="post" class="add-list">
+					        <div class="form-item">
+						        <label for="name">Naam van de nieuwe lijst</label>
+						        <input type="text" class="form-text" name="name" id="name" />
 						    </div>
-					     	<div class="form-item clearfix">
-						        <label class="col-md-3" for="status">Status</label>
-						        <select class="col-md-5" class="form-select" name="status" id="status">
-						          <option value="te_lezen">Te lezen</option>
-						          <option value="gelezen">Gelezen</option>
-						        </select>
-							</div>
-						    <ul class="books">
-						      <li class="book clearfix first ">
-						        <div class="cover col-md-3"><img src="http://webservices.bibliotheek.be/index.php?func=cover&EAN=8716777050095&VLACCnr=2829721"></div>
-						        <div class="col-md-5">
-						          <div class="title"><a href="#">De test</a></div>
-						          <div class="author"><a href="#">Auteur</a></div>
-						          <div class="year">Jaar van uitgave 2013</div>
-						          <div class="type">Boek</div>
-						        </div>
-						      </li>
-						      <li class="book clearfix">
-						        <div class="cover col-md-3"><img src="http://webservices.bibliotheek.be/index.php?func=cover&EAN=8716777050095&VLACCnr=2829721"></div>
-						        <div class="col-md-5">
-						          <div class="title"><a href="#">De test</a></div>
-						          <div class="author"><a href="#">Auteur</a></div>
-						          <div class="year">Jaar van uitgave 2013</div>
-						          <div class="type">Boek</div>
-						        </div>
-						      </li>
-						      <li class="book clearfix last">
-						        <div class="cover col-md-3"><img src="http://webservices.bibliotheek.be/index.php?func=cover&EAN=8716777050095&VLACCnr=2829721"></div>
-						        <div class="col-md-5">
-						          <div class="title"><a href="#">De test</a></div>
-						          <div class="author"><a href="#">Auteur</a></div>
-						          <div class="year">Jaar van uitgave 2013</div>
-						          <div class="type">Boek</div>
-						        </div>
-						      </li>
-
-						    </ul>
-
+					        <div class="form-item">
+						        <label for="description">Korte omschrijving</label>
+						        <textarea class="form-textarea" name="description" id="description"></textarea>
+						    </div>
 						    <div class="form-item col-md-3">
 						        <input type="submit" name="submit" id="submit" class="form-submit blue" value="Voeg toe" />
 						    </div>

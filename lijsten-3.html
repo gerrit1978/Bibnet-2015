@@ -97,63 +97,42 @@
 	  
 	    <div class="col-md-9 main-content lijsten">
 	      <div class="inner clearfix">
-	        <div class="col-md-8 alpha omega">
-	        	<h4>Item toevoegen</h4>
-					    <form method="post" class="add-item">
-					        <div class="form-item clearfix">
-						        <label class="col-md-3" for="voeg_toe">Voeg toe aan</label>
-						        <select class="col-md-5" class="form-select" name="voeg_toe" id="voeg_toe">
-						          <option value="default">-- nieuwe lijst --</option>
-						        </select>
-						    </div>
-					     	<div class="form-item clearfix">
-						        <label class="col-md-3" for="status">Status</label>
-						        <select class="col-md-5" class="form-select" name="status" id="status">
-						          <option value="te_lezen">Te lezen</option>
-						          <option value="gelezen">Gelezen</option>
-						        </select>
-							</div>
-						    <ul class="books">
-						      <li class="book clearfix first ">
-						        <div class="cover col-md-3"><img src="http://webservices.bibliotheek.be/index.php?func=cover&EAN=8716777050095&VLACCnr=2829721"></div>
-						        <div class="col-md-5">
-						          <div class="title"><a href="#">De test</a></div>
-						          <div class="author"><a href="#">Auteur</a></div>
-						          <div class="year">Jaar van uitgave 2013</div>
-						          <div class="type">Boek</div>
-						        </div>
-						      </li>
-						      <li class="book clearfix">
-						        <div class="cover col-md-3"><img src="http://webservices.bibliotheek.be/index.php?func=cover&EAN=8716777050095&VLACCnr=2829721"></div>
-						        <div class="col-md-5">
-						          <div class="title"><a href="#">De test</a></div>
-						          <div class="author"><a href="#">Auteur</a></div>
-						          <div class="year">Jaar van uitgave 2013</div>
-						          <div class="type">Boek</div>
-						        </div>
-						      </li>
-						      <li class="book clearfix last">
-						        <div class="cover col-md-3"><img src="http://webservices.bibliotheek.be/index.php?func=cover&EAN=8716777050095&VLACCnr=2829721"></div>
-						        <div class="col-md-5">
-						          <div class="title"><a href="#">De test</a></div>
-						          <div class="author"><a href="#">Auteur</a></div>
-						          <div class="year">Jaar van uitgave 2013</div>
-						          <div class="type">Boek</div>
-						        </div>
-						      </li>
-
-						    </ul>
-
-						    <div class="form-item col-md-3">
-						        <input type="submit" name="submit" id="submit" class="form-submit blue" value="Voeg toe" />
-						    </div>
-						    <div class="form-item col-md-3">
-						        <input type="submit" name="submit" id="submit" class="form-submit grey" value="Annuleren" />
-						    </div>
-
-					    </form>
-					  </div>
-				</div> <!-- inner -->
+	        <div class="col-md-12 alpha omega">
+	        	<h4>Jouw lijsten</h4>
+			         <div class="table lijsten">
+			           <div class="row title">
+			             <div class="title col-md-4">Titel</div>
+			             <div class="shared col-md-2">Gedeeld</div>
+			             <div class="edited col-md-2">Laatst gewijzigd</div>
+			             <div class="number col-md-2">Aantal items</div>
+			             <div class="actions col-md-2">&nbsp;</div>
+			           </div>
+			           <div class="row content odd">
+			             <div class="title col-md-4"><a href="#">Lijst 1</a></div>
+			             <div class="shared col-md-2">X</div>
+			             <div class="edited col-md-2">11/05/2015</div>
+			             <div class="number col-md-2">6</div>
+			             <div class="actions col-md-2"><a href="#">bewerk</a> | <a href="#">verwijder</a></div>
+			           </div>
+			           <div class="row content even">
+			             <div class="title col-md-4"><a href="#">Lijst 2</a></div>
+			             <div class="shared col-md-2">X</div>
+			             <div class="edited col-md-2">11/05/2015</div>
+			             <div class="number col-md-2">6</div>
+			             <div class="actions col-md-2"><a href="#">bewerk</a> | <a href="#">verwijder</a></div>
+			           </div>
+			           <div class="row content odd last">
+			             <div class="title col-md-4"><a href="#">Lijst 3</a></div>
+			             <div class="shared col-md-2">X</div>
+			             <div class="edited col-md-2">11/05/2015</div>
+			             <div class="number col-md-2">6</div>
+			             <div class="actions col-md-2"><a href="#">bewerk</a> | <a href="#">verwijder</a></div>
+			           </div>
+			         </div>
+	        	
+	        	<a class="button blue" href="#">Maak nieuwe lijst aan</a>
+	        </div>
+		  </div> <!-- inner -->
 		    <div class="footer col-md-12">
 	        &copy; Bibnet 2014 - <a href="#">Gebruiksvoorwaarden</a>          
 		    </div>
