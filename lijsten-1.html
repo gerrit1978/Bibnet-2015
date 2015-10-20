@@ -95,13 +95,35 @@
 	      </div> <!-- inner -->
 	    </div> <!-- sidebar first -->
 	  
-	    <div class="col-md-9 main-content digitale-collecties">
-	      <div class="inner">
-	        <section class="section first">
-		        	<h4>Item toevoegen</h4>
-		        	en hier de rest
-	        </section>
-			  </div> <!-- inner -->
+	    <div class="col-md-9 main-content lijsten">
+	      <div class="inner clearfix">
+	        <div class="col-md-8 alpha omega">
+	        	<h4>Item toevoegen</h4>
+					    <form method="post">
+					      <div class="form-item">
+						        <label class="col-md-4" for="voeg_toe">Voeg toe aan</label>
+						        <select class="col-md-4" class="form-select" name="voeg_toe" id="voeg_toe">
+						          <option value="default">-- nieuwe lijst --</option>
+						        </select>
+						    </div>
+					      <div class="form-item">
+						        <label class="col-md-4" for="status">Voeg toe aan</label>
+						        <select class="col-md-4" class="form-select" name="status" id="status">
+						          <option value="te_lezen">Te lezen</option>
+						          <option value="gelezen">Gelezen</option>
+						        </select>
+						    </div>
+
+						    <div class="form-item">
+						        <input type="submit" name="submit" id="submit" class="lost-password form-submit blue" value="Verzend" />
+						    </div>
+						    <div class="form-item">
+						        <input type="submit" name="submit" id="submit" class="lost-password form-submit grey" value="Annuleer" />
+						    </div>
+
+					    </form>
+					  </div>
+				</div> <!-- inner -->
 		    <div class="footer col-md-12">
 	        &copy; Bibnet 2014 - <a href="#">Gebruiksvoorwaarden</a>          
 		    </div>
