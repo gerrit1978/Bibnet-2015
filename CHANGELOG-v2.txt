@@ -1,0 +1,64 @@
+CHANGES 26.08.2014 obv presentatie klant
+
+Algemeen:
+- map "stylesheets" opnieuw inladen
+- map "images" opnieuw inladen
+- map "javascripts" opnieuw inladen
+
+slide 3-4: header
+- zie alle bestanden -v2.html: taalkeuze staat telkens achteraan, 
+- top menu: zowel wanneer niet ingelogd als wanneer ingelogd.
+  is telkens aangegeven met commentaar velden "<!-- SECONDARY MENU WHEN LOGGED OUT -->" en "<!-- SECONDARY MENU WHEN LOGGED IN -->"
+- <div class='logo'> is aangepast: tekst "mijn bibliotheek" en "al jouw bibliotheekdiensten..." is toegevoegd.
+  Deze tekst wordt NIET getoond op smartphone: te weinig plaats hiervoor.
+
+slide 5-7: keuze "aanmelden of registreren"
+- zie nieuw bestand aanmelden-1-v2.html
+- deze pagina (en andere "aanmeldpagina's") heeft als body class="narrow-page" => breedte van 740px ipv 1170px
+- vraag: wat met smartphone? Uitlegtekst (Jouw uitleningen - Reserveren - Digitale collectie) gewoon tonen? Is nu zo.
+
+slide 8-10: aanmelden
+- zie nieuw bestand aanmelden-2-v2.html
+- weinig veranderd. Ook body class="narrow-page" voor smallere pagina. Tekst "Paswoord vergeten" staat op smartphone onder tekstveld.
+
+slide 11-12: paswoord vergeten
+- zie nieuw bestand aanmelden-3-v2.html
+- geen speciale opmerkingen
+
+slide 13-14: profielpagina
+- zie nieuw bestand profiel-1-v2.html
+- hierin is top menu aangepast: taalkeuze staat ook hier rechts
+- kruisje naast "verwijder je Mijn Bibliotheek profiel" is kleiner geworden (vraag van in de volgende slides)
+
+slide 15-16: dashboard pagina
+- zie nieuw bestand dashboard-v2.html
+- geen speciale opmerkingen: let op extra class (ook bij andere bestanden) op r. 92: "dashboard" naast "main-content"
+
+slide 17: "mijn bibliotheken"
+- zie bestand mijn-bibliotheken-v2.html, op basis van html van dev-versie
+- let op extra class op r. 99 "mijn-bibliotheken" naast "main-content"
+- ook hier de messages met enkel border (rood/blauw) en niet meer met background rood/blauw
+- let op extra class "space-right" bijv. op r. 155 voor extra witruimte naast de blauwe knop indien aanwezig
+
+slide 18-22: "bibliotheek" pagina algemeen
+- zie bestand "bibliotheek-2-v2.html"
+- algemene structuur is ruwweg hetzelfde gebleven, let wel op extra class op r. 99 "library"
+- structuur van de lijst met items is wel veranderd; hier staat nu telkens een class="col-md-9" en nog andere extra classes bij 
+  omdat de breedte vroeger 100% was en het nu meer op een tabel lijkt
+- op smartphone is dit gewoon onder elkaar per item zoals voorheen -> ok
+
+slide 23-24: "uitleenhistoriek" en "betaling"
+- zie ook bestand bibliotheek-2-v2.html
+- javascript bibnet.js is lichtjes aangepast
+- uitleenhistoriek en betaling worden nu in tabelvorm getoond
+- dit is nog niet responsive gemaakt -> volgt woensdag of evt donderdagnamiddag samen. Tabellen responsive maken = wel erg moeilijk zonder design.
+  Ik zal de informatie onder elkaar plaatsen zoals het voorheen het geval was.
+
+slide 25-26: ticketbib
+- zie nieuw bestand ticketbibliotheek-v2.html
+- zeer eenvoudige pagina met structuur overgenomen van andere pagina's.
+- bijna alleen platte tekst met <section class="messages">
+
+slide 27-30: digitale collecties
+- zie nieuw bestand digitale-collecties-v2.html
+- ook hier vrij straightforward met enkel wat platte HTML

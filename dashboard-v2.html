@@ -1,0 +1,166 @@
+<!-- dashboard-v2 -->
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="stylesheet" type="text/css" href="stylesheets/styles.css" />
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/vnd.microsoft.icon" />
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->  
+</head>
+<body>
+<!-- SECONDARY MENU WHEN LOGGED IN -->
+<div id="secondary-menu" class="resp-false">
+  <div class="container">
+    <span>Welkom, <a href="#">Johan Mijs</a></span>
+    <span><a href="#">Contact</a></span> 
+    <span><a href="#">Afmelden</a></span>   
+    <span class="langswitch last"><a href="#" class="active">NL</a> | <a href="#">FR</a> | <a href="#">EN</a></span>
+  </div>
+</div>
+<!-- END SECONDARY MENU -->
+<div id="wrapper">
+<div id="preloader-general"><span>Even geduld...</span></div>
+<div id="header" class="container">
+  <div class="logo">
+      <a href="/portal/rest/user/dashboard">
+      <h1>Mijn Bibliotheek</h1>
+      <h2>Al jouw bibliotheekdiensten op &eacute;&eacute;n plaats</h2>
+      </a>
+  </div> <!-- logo -->
+</div> <!-- header -->
+
+<div id="main">
+  <div class="container">
+	  <h1 class="title">Johan Mijs</h1>
+	  <div class="row">
+	  
+	    <div class="col-md-3 sidebar-first">
+	      <div class="icon resp-true"><a href="#">Menu</a></div>
+	      <div class="inner">
+	        <span class="resp-true close-menu"><a href="#">Sluiten</a></span>
+	        <ul>
+            <li class="resp-true first">
+                Welkom, <a class="inline" href="/portal/rest/user/profile">johanmijs</a>
+            </li>	        
+	          <li>
+	            <a class="title" href="#">Mijn Bibliotheken</a>
+	            <ul>
+	              <li><a href="#">Bibliotheek Antwerpen</a></li>
+	              <li>
+	                <a href="#">Bibliotheek Anzegem</a>
+	                <ul>
+	                  <li><a href="https://staging-mijn.bibliotheek.be">Naam lener 1</a></li>
+	                  <li><a href="#">Naam lener 2</a></li>
+	                </ul>
+	              </li>
+	              <li><a href="#">Bibliotheek Avelgem</a></li>
+	              <li><a href="#">Bibliotheek De Borre</a></li>
+	            </ul>
+	          </li>
+	          <li>
+	            <a class="title " href="#">Mijn Digitale Collecties</a>
+	            <ul>
+	              <li><a href="#">E-Boeken</a></li>
+	              <li><a href="#">Fundels Prentenboeken</a></li>
+	            </ul>
+	          </li>
+	          <li>
+	            <a class="title" href="#">Mijn Profiel</a>
+	          </li>
+	          <li class="last">
+	            <a class="title" href="#">+ Voeg een lidmaatschap toe</a>
+	          </li>
+	          <li class="resp-true">
+	            <a class="title" href="#">Contact</a>
+	          </li>
+	          <li class="resp-true resp-last">
+	            <a class="title" href="#">Afmelden</a>
+	          </li>
+	          <li class="resp-true inline">
+	            <a href="#">Gebruiksvoorwaarden</a> &bull; <a href="#">NL</a> | <a href="#">FR</a> | <a href="#">EN</a>
+	          </li>
+	        </ul>
+	      </div> <!-- inner -->
+	    </div> <!-- sidebar first -->
+	  
+	    <div class="col-md-9 main-content dashboard">
+	      <div class="inner clearfix">
+         <section class="section libraries first">
+           <h3>Mijn openbare bibliotheken</h3>
+           <ul class="items">
+             <li class="item">
+               <div class="title">Bibliotheek Leuven</div>
+               <div class="content"><a href="#" class="blue">1 lidmaatschap, 6 uitleningen, 2 reservaties</a></div>
+             </li>
+             <li class="item">
+               <div class="title">Bibliotheek Brussel</div>
+               <div class="content"><a href="#" class="blue">1 lidmaatschap, 8 uitleningen, 3 reservaties</a></div>
+             </li>
+             <li class="item">
+               <div class="title">Bibliotheek Mechelen</div>
+               <div class="content"><a href="#" class="blue">2 lidmaatschappen, 1 uitlening, 0 reservaties</a></div>
+             </li>
+             <li class="item">
+               <div class="title">Bibliotheek Bilzen (ticket)</div>
+               <div class="content">Met een bibliotheekticket heb je enkel toegang tot de digitale collecties</div>
+             </li>
+           </ul>
+           <div class="actions clearfix">
+             <div class="col-md-4 col"><a class="button blue">Overzicht bibliotheekkaarten</a></div>
+             <div class="col-md-4 col"><a class="button grey">Voeg lidmaatschap toe</a></div>
+           </div>
+         </section>
+         <section class="section digicollections">
+           <h3>Mijn digitale collecties</h3>
+           <ul class="items">
+             <li class="item">
+               <div class="title">Krantenarchief (GoPress)</div>
+               <div class="content"><a href="#" class="blue">Zoek in het archief</a> | <a href="#" class="blue">Meer info</a></div>
+             </li>
+             <li class="item">
+               <div class="title">E-Boeken</div>
+               <div class="content"><a href="#" class="blue">Toon collectie</a> | <a href="#" class="blue">Meer info</a> <span>Je kan nog 6 e-boeken lenen met je huidig leentegoed</span></div>
+             </li>
+             <li class="item">
+               <div class="title">Prentenboeken (Fundels)</div>
+               <div class="content"><a href="#" class="blue">Zoek in het archief</a> | <a href="#" class="blue">Meer info</a></div>
+             </li>
+           </ul>
+           <div class="actions clearfix">
+             <div class="col-md-4 col"><a class="button blue">Overzicht digitale collecties</a></div>
+             <div class="col-md-4 col"><a class="button grey">Voeg leentegoed e-boeken toe</a></div>
+           </div>
+         </section>
+         <section class="section profile last">
+           <h3>Mijn profiel</h3>
+           <div class="actions clearfix">
+             <div class="col-md-4 col"><a class="button blue">Toon persoonlijke gegevens</a></div>
+             <div class="col-md-4 col"><a class="button grey">Wijzig paswoord</a></div>
+           </div>
+         </section>
+				</div> <!-- inner -->
+		    <div class="footer col-md-12">
+	        &copy; Bibnet 2014 - <a href="#">Gebruiksvoorwaarden</a>          
+		    </div>
+		  </div> <!-- main-content -->
+	  </div> <!-- row -->
+  </div> <!-- container -->
+  
+</div> <!-- main -->
+
+
+</div> <!-- wrapper -->
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="javascripts/bibnet.js"></script>
+</body>
+</html>

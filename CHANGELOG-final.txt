@@ -1,0 +1,87 @@
+- slide 2: opmerking 2 (rechts uitlijnen van de zin onderaan)
+---> stylesheet aangepast
+
+- slide 3: opm 1 (image behouden bij e-boeken mobile)
+---> stylesheet aangepast
+
+- slide 3: opm 2: andere layout voor e-boeken openklapding: is dat te doen?
+---> is aangepast, zowel voor e-boeken als fundels. Zie eboeken-v2.html r. 126: class='expand' toev
+     en r. 127 class='collapsed'. Ook bibnet.js is aangepast en stylesheet en sprite natuurlijk ook.
+
+- slide 4: grotere icons eboeken. (met “Devices op de blauwe achtergrond“ bedoelen ze de foto van de ipad en 
+  iphone)
+---> sprite en stylesheet aangepast voor grotere iconen (enkel op desktop, op mobile zijn ze 
+     dezelfde grootte, anders staat heel het scherm vol)
+
+- slide 4: uitlijning ?-icoon bij safari is inderdaad niet optimaal
+---> (zie ook slide 7). Stylesheet wat aangepast. 
+
+- slide 5: enig idee waarom die tooltip bij e-boeken plots wit is?
+---> geen idee, in mijn html staat die gewoon. TBD maandag om de uiteindelijke markup te checken. 
+---> Update: lijkt erop dat die overridden wordt door jQuery UI tooltip.... Is jQuery UI nodig op deze pagina?
+
+- slide 6: layout fundels pagina mobile. check je eens?
+---> dat kan ik helaas ook niet reproduceren in mijn HTML :(; op dev zie ik bij johanmijs zo geen historiek staan.
+     Bij "uitleenhistoriek" bij een bibliotheek lijkt dit ook goed te zijn. Mogelijk device-afhankelijk, dwz bij bepaalde browsers
+     op mobiele devices??? TBD maandag. 
+
+- slide 7: tooltips op mobile
+---> Zie registreer-stap2-v2.html: "data-placement=left" om te vermijden dat tekst wordt afgebroken. Ik hoop alleen dat nu
+     niet de commentaar komt dat dit over het tekstveldje komt.
+
+- slide 8 - 11: pagina die nog wat layout opsmuk nodig heeft
+---> stylesheet aangepast. Zie nieuwe pagina vergeten-pagina-v2.html voor de precieze HTML-opmaak.
+
+- slide 12: opm 2 zorg je dat h1 en h2 langs het logo een juiste style krijgen nu ze klikbaar zijn
+(nu staat er 3x een logo omdat we die <a> hebben toegevoegd)
+---> stylesheet aangepast. Zie dashboard.html voor juiste code van logo: slechts één <a> tag.
+
+- slide 13: kleintjes in de css denk ik
+---> stylesheet aangepast. Extra class="space-below" in aanmelden-1-v2.html voor marge onder titel (r. 74)
+
+- slide 14: class extra op mobile niet meer centreren (laat ik aan jouw zodat ik van de css kan afblijven voorlopig)
+---> class=extra mag hier weg uit de HTML. Is voor de rest niet nodig (zie aanmelden-2-v2.html,
+     daar staat die ook niet in).
+
+- slide 17-18: tweak in html / css
+---> stylesheet en HTML-code (zie mijn-bibliotheken-v2.html) aangepast. Elke bib = <section class="library">
+
+- slide 19-23: bib pagina: deels voor jou. waarschijnlijk best maandag samen te integreren
+---> slide 19
+-----> punt 1: stylesheet aangepast
+-----> punt 2: Joeri
+-----> punt 3: sprite aangepast
+-----> punt 4: stylesheet aangepast
+-----> punt 5: class="button" weglaten, dus enkel class="blue"
+-----> punt 6: classes "odd" en "even": de 1e <tr> (met enkel <th>) krijgt dan class="odd", de volgende class="even" enz
+-----> punt 7: ???
+-----> punt 8: sprite aangepast - te verifiëren
+-----> punt 9: class="error" ipv class="message"??
+-----> punt 10: te verifiëren -> bij mij zien die titels er ook vet uit op mobile?
+-----> punt 11: stylesheet & sprite & bibnet.js aangepast, aangepaste HTML markup in bibliotheek-2-v2.html
+---> slide 20
+-----> screenshot
+---> slide 21
+-----> zie slide 19
+---> slide 22
+-----> zie ook slide 6; ik kan dit helaas niet reproduceren :(
+
+- slide 24 punt 1: class title bold zetten in digitale-collecties
+---> stylesheet aangepast
+
+- slide 25: opm 2 + 3
+---> leeg maken velden: werkt die "autocomplete='off'" niet? Toetsenbord-probleem: geen idee of hier een oplossing voor is? TBD maandag
+
+- slide 26, punt 3: ?
+---> ik zie niet echt een punt 3 op slide 26 :)
+
+- slide 29
+---> stylesheet en sprite aangepast
+
+- slide 30: punt 1 en 3
+---> stylesheet aangepast.
+---> kleine HTML-wijziging in profiel-1-v2.html: "Dit heeft geen enkel..." staat nu tussen <p>-tags.
+
+- slide 32 en 34: css dingskes
+---> stylesheet aangepast. Voeg steeds class="grey" ipv class="red" toe bij grijze knoppen, 
+     dan krijgen ze automatisch het nieuwe grijs als kleur

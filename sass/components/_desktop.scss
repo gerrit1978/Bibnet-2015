@@ -1,0 +1,714 @@
+/* Desktop and tablet */
+@media all and (min-width: 992px) {
+  body {
+    background: url(../images/bg-page.png) repeat;
+  }
+
+  .resp-true {
+    display: none;
+  }
+  
+  h2 {
+  }
+  
+  a.button {
+    display: inline-block;
+    width: auto;
+    padding-left: 3em;
+    padding-right: 3em;
+    margin-bottom: 10px;
+  }
+  
+  /* Narrow pages */
+  body.narrow-page {
+    .container {
+      width: 740px;
+    }
+    h1.title {
+      margin-left: 0;
+    }
+  }
+
+  #header {
+	  .logo {
+	    a {
+	      min-height: 65px;
+	      text-indent: 0 !important;
+	      background-repeat: no-repeat;
+	      background-position: left -2562px;
+	      padding-left: 85px;
+	      color: $black;
+	      text-decoration: none;
+	      &:hover {
+	        text-decoration: none;
+	      }
+	    }
+	    h1, h2 {
+	      display: block;
+	      font-family: Arial;
+	    }
+	    h1 {
+	      margin: 0;
+	      font-weight: bold;
+	      font-size: 40px;
+	    }
+	    h2 {
+	      margin: 0;
+	      font-weight: lighter;
+	      font-size: 17px;
+	    }
+	  }
+  }
+  
+  #main {
+	  .container {
+	    background: $white;
+	    margin-top: 30px;
+	  }
+	  
+	  .main-content {
+	    padding-bottom: 3em;
+	    margin-bottom: 1em;
+	    .inner {
+	      background: $bgMainContent url(../images/bg-main.png) no-repeat left top;
+	      padding: 20px;
+	    }
+	    &.dashboard {
+	      .inner {
+	        padding: 0;
+	      }
+	    }
+	    &.mijn-bibliotheken {
+	      .inner {
+	        padding: 0;
+	        padding-top: 10px;
+	      }
+	    }
+	  }
+  }
+  
+  h1 {
+    &.title {
+      &.full-width {
+        margin-left: 0;
+      }
+    }
+  }
+  
+  /* "Splash page" */
+  .left {
+    width: 50%;
+    float: left;
+  }
+  
+  .right {
+    width: 50%;
+    float: left;
+  }
+  
+  /* Main menu */
+  #main {
+    .sidebar-first {
+      ul {
+        font-size: 0.925em;
+        margin: 0;
+        padding: 0;
+        li {
+          list-style: none;
+          color: $lightGrey;
+          line-height: 36px;
+          border-bottom: 1px dotted $lightGrey;          
+          a {
+            padding-left: 2px;
+            color: $darkGrey;
+            display: block;
+            height: 36px;
+            overflow: hidden;
+	          &.title {
+	            text-transform: uppercase;
+	          }
+	          &:hover {
+	            background: $menuGreyText;
+	            text-decoration: none;
+	          }
+	          &.active {
+	            background: url(../images/sprite.png) no-repeat right -256px;
+	            color: white;
+	            position: relative;
+	            z-index: 100;
+	            width: 120%;
+	          }
+          }
+          &.last {
+            border-bottom: none;
+          }
+          ul {
+            li {
+              border-bottom: none;
+              a {
+                padding-left: 20px;
+              }
+              ul {
+                li {
+                  a {
+                    padding-left: 40px;
+                  }
+                  border-bottom: none;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }  
+
+  h1.title {
+    margin-left: 25%;
+    padding-left: 10px;
+  }
+  
+  body.narrow-page {
+    h1.title {
+      padding-left: 0;
+    }
+  }
+    
+  /* Registration Steps */
+  ul.steps {
+    li.step {
+      a {
+	      background: url(../images/sprite.png) no-repeat left -55px;    
+	      display: block;
+	      height: 28px;
+	    }
+	    span {
+	      display: none;
+	    }
+	    &.step-0 {
+	      width: 63px;
+	      background: url(../images/sprite.png) no-repeat left -55px;
+	    }
+	    &.step-1 {
+	      width: 52px;
+	    }
+	    &.step-2 {
+	      width: 55px;
+	    }
+      &.step-3 {
+	      width: 49px;
+	    }
+
+	  }
+	  &.steps-0 {
+      li.step-1 {
+        a {
+          background-position: -63px -55px;
+        }
+      }
+      li.step-2 {
+        a {
+          background-position: -115px -55px;
+        }
+      }
+      li.step-3 {
+        a {
+          background-position: -170px -55px;
+        }
+      }
+	  }
+	  &.steps-1 {
+	    li.step-0 {
+	      background-position: left -83px;
+	    }
+	    li.step-1 {
+	      a {
+	        background-position: -63px -83px;
+	      }
+	    }
+	    li.step-2 {
+	      a {
+	        background-position: -115px -83px;
+	      }
+	    }
+	    li.step-3 {
+	      a {
+	        background-position: -170px -83px;
+	      }
+	    }
+	  } 
+	  &.steps-2 {
+	    li.step-0 {
+	      background-position: left -112px;
+	    }
+	    li.step-1 {
+	      a {
+	        background-position: -63px -112px;
+	      }
+	    }
+	    li.step-2 {
+	      a {
+	        background-position: -115px -112px;
+	      }
+	    }
+	    li.step-3 {
+	      a {
+	        background-position: -170px -112px;
+	      }
+	    }
+	  } 
+	  &.steps-3 {
+	    li.step-0 {
+	      background-position: left -472px;
+	    }
+	    li.step-1 {
+	      a {
+	        background-position: -63px -472px;
+	      }
+	    }
+	    li.step-2 {
+	      a {
+	        background-position: -115px -472px;
+	      }
+	    }
+	    li.step-3 {
+	      a {
+	        background-position: -170px -472px;
+	      }
+	    }
+	  } 
+  }
+
+  
+
+  /* Forms */
+  .form-item {
+    position: relative;
+    .form-text, .form-email, .form-password, select {
+      width: 90%;
+    }
+    textarea {
+      width: 90% !important;
+    }
+    span.validation {
+      float: right;
+      width: 30px;
+      height: 30px;
+      &.false {
+        background: url(../images/sprite.png) no-repeat right -297px;
+      }
+      &.true {
+        background: url(../images/sprite.png) no-repeat right -327px;
+      }
+    }
+    .message {
+      font-size: 0.9375em;
+      &.error {
+        color: $red;        
+      }
+    }
+  }  
+  
+  /* General Preloader */
+  #preloader-general {
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* Items */
+  ul.items {
+    li.item {
+      .actions {
+        a {
+          display: inline-block;
+          padding-left: 20px;
+          padding-right: 20px;
+          font-size: 1em !important;
+        }
+        span.late {
+          font-size: 1em;
+        }
+      }
+    }
+  }
+
+  .section {
+    .item {
+      .value {
+        font-weight: normal !important;
+      }
+    }
+  }
+  
+  .footer {
+    margin-top: 10px;
+    text-align: right;
+    color: $lightGrey;
+    font-size: 0.875em;
+    a {
+      color: $lightGrey;
+    }
+  }
+  
+  .no-bg {
+    background: none !important;
+    border: none !important;
+    color: $darkGrey !important;
+    a {
+      color: $darkGrey !important;
+      border-bottom: 1px solid $darkGrey !important;
+    }
+  }
+
+  .form-submit {
+	  @include rounded;
+	  &.next {
+	    padding-right: 40px !important;
+	    &.red {
+	      background-position: right -411px !important;
+	    }
+	    &.blue {
+	      background-position: right -411px !important;
+	      &:active, &:focus {
+	        background-color: $darkBlue;
+	      }
+	    }
+	  }
+  }
+  
+  form.narrow {
+    width: 60%;
+  }
+  
+  /* Profile page */
+  .section {
+	  .item {
+	    clear: both;
+			.label {
+        width: 20%;
+        float: left;
+        text-align: left;
+			}
+			.value {
+			  float: left;
+	    }
+	  }
+  }
+
+  /* Lost Password */
+  a.lost-password {
+    float: right;
+    margin-right: -130px;
+    margin-top: 5px;
+  }
+  
+  .lost-password {
+    &.form-submit {
+      width: 105px;
+    }
+  }
+  
+  /* Consistent buttons */
+  .form-submit {
+    &.equal-width {
+      width: 220px;
+    }
+  }
+  
+  /* Dashboard */
+  .dashboard {
+    section.messages {
+      margin: $messagesmargin;
+    }
+    .section {
+      border-bottom: 15px solid white;
+      padding: 20px; 
+      h3 {
+        margin-top: 0;
+      }
+      .actions {
+        .col {
+          padding-right: 20px !important;
+        }
+        a.button {
+          width: 100%;
+          padding: 6px 10px !important;
+        }
+      }
+    }
+  }
+
+  /* Dashboard */
+  .mijn-bibliotheken {
+    section.library {
+      border-bottom: 15px solid white !important;
+      padding-left: 20px !important; 
+      padding-right: 20px !important;
+      &.first {
+        padding-top: 20px;
+      }
+      section.messages {
+        margin: $messagesmargin;
+      }
+      .message.info.no-bg{
+        padding: 0 15px;
+      }
+      div.actions {
+        text-align: left !important;
+      }
+    }
+  }
+  
+  /* Extra space right */
+  .space-left {
+    margin-left: 20px;
+  }
+  .space-right {
+    margin-right: 20px;
+  }
+  
+  /* Bibliotheek pagina */
+  .library {
+    .inner {
+      padding: 0 !important;
+      background: white !important;
+    }
+    section {
+      &.first {
+	      background: $bgMainContent url(../images/bg-main.png) no-repeat left top;
+        margin-bottom: 0 !important;
+      }
+    }
+    section.section, section.links {
+      background: #f4f4f4;
+      margin-bottom: 15px;
+      padding: 20px;
+      padding-bottom: 0;
+    }
+    section.section {
+      padding-bottom: 20px;
+    }
+    
+    section.betaling, section.historiek {
+      padding-bottom: 20px;
+    }
+    section.messages {
+      padding: $messagesmargin;
+    }
+    section.icons {
+      background: white;
+    }
+    
+    ul.items {
+      li.item {
+        .actions {
+          text-align: center;
+        }
+      }
+    }
+    
+    table.uitleenhistoriek {
+      width: 100%;
+      margin-bottom: 20px;
+      tr {
+        &.odd {
+          background: $lightBlue;
+        }
+        td, th {
+          padding: 10px 4px;
+          &.title {
+            width: 40%;
+          }
+          &.dates, &.library {
+            width: 30%;
+          }
+        }
+      }
+    }
+
+    table {
+      width: 100%;
+      margin-bottom: 20px;
+      tr {
+        &.odd {
+          background: $lightBlue;
+        }
+        td, th {
+          padding: 10px 4px;
+        }
+      }
+    }
+
+    table.kosten {
+      tr {
+        td, th {
+          &.title {
+            width: 60%;
+          }
+          &.type, &.date, &.bedrag {
+            width: 12%;
+          }
+        }
+      }
+    }
+
+    table.uitleenhistoriek {
+      tr {
+        td, th {
+          &.title {
+            width: 40%;
+          }
+          &.dates, &.library {
+            width: 30%;
+          }
+        }
+      }
+    }
+    
+    a.download {
+      display: block;
+      margin-left: 70%;
+      width: 30%;
+    }
+    
+  }
+  
+  /* Tooltips */
+  .tooltipinit {
+    margin-right: 40px !important;
+  }
+  
+  /* Register birthday */
+  .form-item-birthday select {
+    width: 29%;
+  }
+  
+  /* E-boeken */
+  .eboeken {
+    .leentegoed {
+      background-position: left -1785px !important;
+      min-height: 50px !important;
+      padding-left: 80px !important;
+    }
+    .boekenkaart {
+      .item-boekenkaart{
+      min-height: 100px;
+      padding-left: 80px;
+      &.icon-code{
+        background: url(../images/icons/icon_code_big.png) no-repeat 0 33px;
+      }
+      &.icon-buycredit{
+        background: url(../images/icons/icon_buycredit_line_big.png) no-repeat 0 33px;
+      }
+    }
+/*
+      .tooltip {
+        width: 200px !important;
+      }
+*/
+    }
+    .betaling {
+      background-position: left -1565px !important;
+      padding-left: 80px;
+    }
+    form {
+      .form-text {
+        width: auto;
+      }
+    }
+    table {
+      width: 100%;
+      margin-bottom: 20px;
+      tr {
+        &.odd {
+          background: $lightBlue;
+        }
+        td, th {
+          padding: 10px 4px;
+        }
+      }
+    }
+  
+    .section.fullwidth {
+      &.blue {
+	      margin-left: -20px;
+	      margin-right: -20px;
+	      padding-left: 20px;
+	      padding-right: 20px;
+      }
+    }
+    
+    .devices {
+      background: url(../images/devices.png) no-repeat right top;
+      padding-top: 5px;
+      padding-right: 175px;
+      padding-left: 50px;
+      text-align: right;
+      min-height: 180px;
+    }
+    
+    /* Current & historiek */
+    .expand {
+      background: $expand;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      a.show-details {
+        padding: 10px;
+        display: block;
+        background: url(../images/sprite.png) no-repeat;
+        &.collapsed {
+          background-position: right -2920px;
+        }
+        &.expanded {
+          background-position: right -2964px;
+        }
+      }
+      &.current {
+        margin-bottom: 20px;
+      }
+    }
+    
+  }
+
+	/* Consumer pages: "je hebt toegang..." */
+	p.access {
+	  em {
+      text-align: right !important;
+	  }
+	}
+	
+	/* Pseudo-table */
+	.table {
+	  .row {
+      padding-left: 0 !important;
+	    padding-right: 0 !important;
+	    &.title {
+	      .title {
+	        padding-left: 10px !important;
+	      }
+	    }
+	    &.content {
+	      .title {
+	        padding-left: 10px !important;
+	      }
+	    }
+	  }
+	}
+  
+  
+}
+
+/* Desktop only */
+@media all and (min-width: 1023px) {
+  #wrapper {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .button, .form-submit {
+    font-size: 1em;
+    font-weight: 300;
+    padding: 6px 14px !important;
+  }
+}

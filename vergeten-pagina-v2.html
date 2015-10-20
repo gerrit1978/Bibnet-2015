@@ -1,0 +1,202 @@
+<!-- dashboard-v2 -->
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="stylesheet" type="text/css" href="stylesheets/styles.css" />
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/vnd.microsoft.icon" />
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->  
+</head>
+<body>
+<!-- SECONDARY MENU WHEN LOGGED IN -->
+<div id="secondary-menu" class="resp-false">
+  <div class="container">
+    <span>Welkom, <a href="#">Johan Mijs</a></span>
+    <span><a href="#">Contact</a></span> 
+    <span><a href="#">Afmelden</a></span>   
+    <span class="langswitch last"><a href="#" class="active">NL</a> | <a href="#">FR</a> | <a href="#">EN</a></span>
+  </div>
+</div>
+<!-- END SECONDARY MENU -->
+<div id="wrapper">
+<div id="preloader-general"><span>Even geduld...</span></div>
+<div id="header" class="container">
+  <div class="logo">
+      <a href="/portal/rest/user/dashboard">
+      <h1>Mijn Bibliotheek</h1>
+      <h2>Al jouw bibliotheekdiensten op &eacute;&eacute;n plaats</h2>
+      </a>
+  </div> <!-- logo -->
+</div> <!-- header -->
+
+<div id="main">
+  <div class="container">
+	  <h1 class="title">Johan Mijs</h1>
+	  <div class="row">
+	  
+	    <div class="col-md-3 sidebar-first">
+	      <div class="icon resp-true"><a href="#">Menu</a></div>
+	      <div class="inner">
+	        <span class="resp-true close-menu"><a href="#">Sluiten</a></span>
+	        <ul>
+            <li class="resp-true first">
+                Welkom, <a class="inline" href="/portal/rest/user/profile">johanmijs</a>
+            </li>	        
+	          <li>
+	            <a class="title" href="#">Mijn Bibliotheken</a>
+	            <ul>
+	              <li><a href="#">Bibliotheek Antwerpen</a></li>
+	              <li>
+	                <a href="#">Bibliotheek Anzegem</a>
+	                <ul>
+	                  <li><a href="https://staging-mijn.bibliotheek.be">Naam lener 1</a></li>
+	                  <li><a href="#">Naam lener 2</a></li>
+	                </ul>
+	              </li>
+	              <li><a href="#">Bibliotheek Avelgem</a></li>
+	              <li><a href="#">Bibliotheek De Borre</a></li>
+	            </ul>
+	          </li>
+	          <li>
+	            <a class="title " href="#">Mijn Digitale Collecties</a>
+	            <ul>
+	              <li><a href="#">E-Boeken</a></li>
+	              <li><a href="#">Fundels Prentenboeken</a></li>
+	            </ul>
+	          </li>
+	          <li>
+	            <a class="title" href="#">Mijn Profiel</a>
+	          </li>
+	          <li class="last">
+	            <a class="title" href="#">+ Voeg een lidmaatschap toe</a>
+	          </li>
+	          <li class="resp-true">
+	            <a class="title" href="#">Contact</a>
+	          </li>
+	          <li class="resp-true resp-last">
+	            <a class="title" href="#">Afmelden</a>
+	          </li>
+	          <li class="resp-true inline">
+	            <a href="#">Gebruiksvoorwaarden</a> &bull; <a href="#">NL</a> | <a href="#">FR</a> | <a href="#">EN</a>
+	          </li>
+	        </ul>
+	      </div> <!-- inner -->
+	    </div> <!-- sidebar first -->
+	  
+      <div class="col-md-9 main-content bib-eboeken">
+        <div class="inner">
+          <section class="messages">
+            <div class="message info">Volgende bibliotheken hebben e-boeken:</div>
+          </section>
+          <section class="section">
+            <h2></h2>
+              <div class="row">
+                <div class="col-md-4">
+                  <ul class="libraries">
+                    <li class="library"><a href="http://www.bibliotheek.be/biosdb/zoek.php?klantevdnr=2320&hoofd=1">Bibliotheek Anzegem (Anzegem)</a></li>
+                    <li class="library"><a href="http://www.bibliotheek.be/biosdb/zoek.php?klantevdnr=2240&hoofd=1">Bibliotheek Bilzen (Bilzen)</a></li>
+                    <li class="library"><a href="http://www.bibliotheek.be/biosdb/zoek.php?klantevdnr=1628&hoofd=1">Bibliotheek Borgloon (Borgloon)</a></li>
+                  </ul>
+                </div>
+                <div class="col-md-4">
+                  <ul class="libraries">
+                    <li class="library"><a href="http://www.bibliotheek.be/biosdb/zoek.php?klantevdnr=9002&hoofd=1">Bibnet-test (Brussel)</a></li>
+                    <li class="library"><a href="http://www.bibliotheek.be/biosdb/zoek.php?klantevdnr=2273&hoofd=1">Bibliotheek Destelbergen (Destelbergen)</a></li>
+                  </ul> 
+                </div>
+                <div class="col-md-4">
+                  <ul class="libraries">          
+                    <li class="library"><a href="http://www.bibliotheek.be/biosdb/zoek.php?klantevdnr=2307&hoofd=1">Bibliotheek Scharpoord (Knokke-Heist)</a></li>
+                    <li class="library"><a href="http://www.bibliotheek.be/biosdb/zoek.php?klantevdnr=2165&hoofd=1">Bibliotheek Londerzeel (Londerzeel)</a></li>
+                  </ul>
+                </div>
+                <div class="clearfix"></div>
+              </div> <!-- row -->
+          </section>
+          <section class="section">
+            <h2>Provincie Limburg</h2>
+              <div class="row">
+                <div class="col-md-4">
+                  <ul class="libraries">
+                    <li class="library"><a href="http://www.bibliotheek.be/biosdb/zoek.php?klantevdnr=2232&hoofd=1">Bibliotheek Lommel (Lommel)</a></li>
+                    <li class="library"><a href="http://www.bibliotheek.be/biosdb/zoek.php?klantevdnr=2223&hoofd=1">Bibliotheek Zonhoven (Zonhoven)</a></li>
+                  </ul>
+                </div>
+                <div class="clearfix"></div>
+              </div> <!-- row -->
+          </section>
+          <section class="section">
+            <h2>Provincie Vlaams-Brabant</h2>
+              <div class="row">
+                <div class="col-md-4">
+                  <ul class="libraries">
+                    <li class="library"><a href="http://www.bibliotheek.be/biosdb/zoek.php?klantevdnr=2199&hoofd=1">de Bib Leuven (Leuven)</a></li>
+                  </ul>
+                </div>
+                <div class="clearfix"></div>
+              </div> <!-- row -->
+          </section>
+
+
+<!--
+<section class="section">
+<h2>Provincie Limburg</h2>
+                                        <div class="col-md-3">
+                                            
+                                                <li><a href="http://www.bibliotheek.be/biosdb/zoek.php?klantevdnr=2232&hoofd=1">Bibliotheek Lommel (Lommel)</a></li>
+                                            
+                                        </div>
+                                        <div class="col-md-3">
+                                            
+                                                <li><a href="http://www.bibliotheek.be/biosdb/zoek.php?klantevdnr=2223&hoofd=1">Bibliotheek Zonhoven (Zonhoven)</a></li>
+                                            
+                                        </div>
+                                        <div class="clearfix"></div>
+</section>    
+<section class="section">
+<h2>Provincie Vlaams-Brabant</h2>
+
+
+
+                                        <div class="col-md-3">
+                                            
+                                                <li><a href="http://www.bibliotheek.be/biosdb/zoek.php?klantevdnr=2199&hoofd=1">de Bib Leuven (Leuven)</a></li>
+                                            
+                                        </div>
+                                        <div class="col-md-3">
+                                            
+                                        </div>
+                                        <div class="col-md-3">
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </section>
+                               -->
+                            </div> <!-- inner -->
+
+                            <div class="footer col-md-12">
+    &copy; Bibnet 2014 - <a href="/portal/voorwaarden_nl.jsp">Gebruiksvoorwaarden</a>
+</div>
+
+                        </div> <!-- main content -->	  </div> <!-- row -->
+  </div> <!-- container -->
+  
+</div> <!-- main -->
+
+
+</div> <!-- wrapper -->
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="javascripts/bibnet.js"></script>
+</body>
+</html>

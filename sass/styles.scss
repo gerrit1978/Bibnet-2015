@@ -1,0 +1,951 @@
+@import "bootstrap";
+@import "components/variables";
+@import "components/desktop";
+@import "components/tablet";
+@import "components/smartphone";
+@import "components/elements";
+
+/* General */
+body {
+  font-size: 16px;
+}
+
+/* Layout */
+#wrapper {
+  margin-top: 10px;
+}
+
+#main {
+  .container {
+    margin-bottom: 20px;
+  }
+}
+
+.row, .subrow {
+  &.last {
+    margin-top: 40px;
+  }
+}
+
+#header {
+  .logo {
+    a {
+      display: block;
+      text-indent: -999em;
+      overflow: hidden;
+      background-image: url(../images/sprite.png);
+    }
+  }
+}
+
+.alpha {
+  padding-left: 0;
+}
+
+.omega {
+  padding-right: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+a.inline {
+  display: inline !important;
+}
+
+/* Links & buttons */
+.button {
+  display: block;
+  text-align: center;
+  padding: 9px 0;
+  @include rounded;
+  &.blue {
+    color: white;
+    background: $blue;
+    &:active, &:focus {
+      background: $darkBlue !important;
+    }
+  }
+  &.red {
+    color: white;
+    background: $red;
+  }
+  &.grey {
+    color: white;
+    background: $grey;
+    &:active, &:focus {
+      background: $greyActive;
+    }
+  }
+  &.next {
+    &.red {
+      background: $red url(../images/sprite.png) right top;    
+    }
+    &.blue {
+      background: $blue url(../images/sprite.png) right top;
+    }
+  }
+}
+
+.eboeken form.buttons-right {
+  text-align: right;
+  margin-right: 100px;
+  .button.grey {
+    margin-right: 5px;
+  }
+}
+
+ul.steps {
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+  li.step {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    height: 28px;
+    line-height: 28px;
+    float: left;
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.125em;
+    font-weight: 800;
+    color: white;
+    a {
+      color: white;
+      cursor: default;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+/* General section styles */
+.section {
+  .item {
+    margin-bottom: 0.5em;
+		.label {
+		  color: $label;
+		  padding: 0;
+		  margin: 0;
+		  font-size: 1em;
+		  font-weight: 400;
+		}
+		
+		.value {
+		  color: $grey;
+		  font-weight: 600;
+		}
+		&.last {
+		  margin-bottom: 40px;
+		}
+	}
+	&.last {
+	  margin-top: 40px;
+	}
+}
+
+/* Specific section styles */
+.section {
+  &.remove {
+    border-top: 1px solid #d1d1d1;
+    padding-top: 20px;
+    a {
+      display: inline-block;
+    }
+  }
+}
+
+/* Lijst met items */
+ul.items {
+  margin: 0;
+  padding: 0;
+  margin-top: 1em;
+  padding-top: 1em;
+  li.item {
+    position: relative;
+    padding-bottom: 1em;
+    list-style: none;
+    .title {
+      color: $blue;
+    }
+    .lid {
+      color: $black;
+      margin-bottom: 10px;
+    }
+    .dates {
+    }
+    .actions {
+      margin-top: 0.5em;
+      a {
+        text-align: center;
+        font-size: 1em;
+        line-height: 1;
+        padding: 6px 12px;
+        @include rounded;
+        &.blue {
+          background: $blue;
+          color: white;
+          &:focus, &:active {
+            background: $darkBlue;
+          }
+        }
+        &.red {
+          background: $red;
+          color: white;
+          border: 2px solid $red;
+        }
+        &.grey {
+          background: $grey;
+          color: white;
+          &:focus, &:active {
+            background: $greyActive;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Lijst zonder indent */
+ul.no-indent{
+  padding: 0;
+  list-style-position: inside;
+}
+
+/* Secondary Menu */
+#secondary-menu {
+  background: $menuGreyDark;
+  color: $menuGreyText;
+  height: 30px;
+  line-height: 30px;
+  a {
+    color: $menuGreyText;
+  }
+  .container {
+    text-align: right;
+    span {
+      border-right: 1px solid $menuGreyText;
+      padding: 0 0.7em;
+      a {
+        &.active {
+          text-decoration: underline;
+        }
+      }
+      &.last {
+        border-right: none;
+      }
+      &.action {
+        background: $menuGreyLight;
+        padding-right: 0.7em;
+        display: inline-block;
+        height: 30px;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
+/* General Preloader */
+#preloader-general {
+  display: none;
+  text-align: center;
+  span {
+    display: inline-block;
+    font-size: 1.25em;
+    height: 32px;
+    line-height: 32px;
+    padding: 0 40px;
+    background: url(../images/loader.gif) no-repeat left center;
+  }
+}
+
+/* Small Preloader */
+.loader {
+  display: none;
+  text-align: center;
+  span {
+	  display: inline-block;
+	  width: 35px;
+	  height: 35px;
+	  background: url(../images/loader-small.gif) no-repeat center center;
+  }
+}
+
+/* Bib page */
+span.late {
+  color: $red;
+}
+
+section.bib-details {
+  margin-bottom: 15px;
+  a {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  span {
+    color: $darkGrey;
+  }
+}
+
+.row.liblinks{
+  margin-top: -10px;
+  margin-bottom: 8px;
+}
+
+section.liblinks{
+  ul {
+    padding-left:0px;
+  }
+  li {
+    display: inline;
+    margin-left: 5px;
+    margin-right: 7px;
+  }
+}
+
+/* Forms */
+.form-item {
+  &.form-item-checkbox {
+    width:360px;
+    input {
+      float: left;
+      width: 8%;
+    }
+    label {
+      float: left;
+      line-height: 24px;
+    }
+  }
+}
+
+/* Messages */
+section.messages {
+  .message {
+    @include rounded;
+    padding: 15px;
+    margin-bottom: 15px;
+    &.error {
+	    border: 2px solid $red;
+	    color: $red;
+	    a {
+	      color: $red;
+	      border-bottom: 1px solid $red;
+	      &:hover {
+	        border-bottom: none;
+	        text-decoration: none;
+	      }
+	    }
+	    .form-submit {
+	      color: $red;
+	    }
+    }
+    &.info {
+      border: 2px solid $blue;
+      color: $blue;
+	    a {
+	      color: $blue;
+	      border-bottom: 1px solid $blue;
+	      &.button{
+	        border: none;
+	        color: white;
+	      }
+	      &:hover {
+	        border-bottom: none;
+	        text-decoration: none;
+	      }
+	    }
+	    .form-submit {
+	      color: $blue;
+	    }
+    }
+    .form-submit {
+      background: white;
+      margin: 10px 0;
+    }
+  }
+}
+
+/* Link (no button) */
+a.link {
+  border: none !important;
+}
+
+a.previous {
+  min-width: 250px;
+  font-weight: bolder;
+} 
+
+/* Remove - cancel stuff */
+a.cancel-remove {
+  color: $red;
+  background: url(../images/sprite.png) no-repeat left -506px;
+  line-height: 2em;
+  padding-left: 20px !important;
+  text-align: left !important;
+  display: inline-block;
+}
+
+/* Voeg een lidmaatschap toe - TODO: test! */
+input#library {
+  width: 80% !important;
+}
+
+/* Voeg lidmaatschap toe steps */
+ul.steps.max-steps-2 {
+  li.step {
+    a {
+      background: url(../images/sprite.png) no-repeat left -554px;    
+      display: block;
+      height: 28px;
+    }
+    span {
+      display: none;
+    }
+    &.step-0 {
+      width: 63px;
+      background: url(../images/sprite.png) no-repeat left -554px;
+    }
+    &.step-1 {
+      width: 52px;
+    }
+    &.step-2 {
+      width: 55px;
+    }
+  }
+  &.steps-0 {
+    li.step-1 {
+      a {
+        background-position: -63px -554px;
+      }
+    }
+    li.step-2 {
+      a {
+        background-position: -115px -554px;
+      }
+    }
+  }
+  &.steps-1 {
+    li.step-0 {
+      background-position: left -582px;
+    }
+    li.step-1 {
+      a {
+        background-position: -63px -582px;
+      }
+    }
+    li.step-2 {
+      a {
+        background-position: -115px -582px;
+      }
+    }
+  } 
+  &.steps-2 {
+    li.step-0 {
+      background-position: left -611px;
+    }
+    li.step-1 {
+      a {
+        background-position: -63px -611px;
+      }
+    }
+    li.step-2 {
+      a {
+        background-position: -115px -611px;
+      }
+    }
+  } 
+}
+
+/* Extra changes after holiday */
+.line {
+  border-top: 1px solid $lightGrey;
+  margin-top: 15px;
+  padding-top: 15px;
+}
+
+/* Aanmelden */
+a.lost-password {
+  text-decoration: underline;
+  display: block;
+  color: $darkGrey;
+}
+
+/* Hold page */
+.hold {
+  .form-item{
+    margin-top: 20px;
+  }
+  .inner-info{
+    margin-left: 10px;
+  }
+  table{
+    width: 100%;
+  }
+}
+
+/* Dashboard */
+.dashboard {
+  .section {
+    &.last {
+      margin-top: 0;
+    }
+    
+    ul.items {
+      margin-top: 0;
+      margin-left: 1em;
+      padding-top: 0;
+      border: none;
+      li.item {
+        border: none;
+        list-style: disc;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 0.5em;
+        .title {
+          color: $black;
+        }
+        .content {
+          &.blue {
+            color: $blue;
+          }
+        }
+      }
+    }
+    .actions {
+      margin-top: 20px;
+      .col {
+        padding: 0;
+      }
+    }
+    
+  }
+}
+
+/* Mijn Bibliotheken */
+.mijn-bibliotheken {
+  ul.items {
+    li.item {
+      margin-top: 10px;
+    }
+  }
+  section.messages {
+    padding: 20px 20px 1px 20px;
+  }
+}
+
+/* Bibliotheek-pagina */
+.library {
+
+  h2 {
+    margin-top: 0;
+    background: $blue;
+    color: $white;
+    padding: 15px 10px;
+    font-weight: lighter;
+    line-height: 1;
+  }
+  
+  ul.items {
+    border-top: 1px solid $line;
+    li.item {
+      list-style: none;
+      border-bottom: 1px solid $line;
+      .description {
+        padding-left: 0;
+	      .title {
+	        color: $blue;
+	        margin-bottom: 10px;
+	      }
+      }
+      .actions {
+        span {
+          display: block;
+	        &.extra {
+	          font-size: 14px;
+	          margin-bottom: 10px;
+	        }
+        }
+        .button {
+          width: 100%;
+          padding: 6px 0px !important;
+        }
+      }
+      &.last {
+        border-bottom: none;
+        margin-bottom: 0;
+      }
+    }
+  }
+  
+  .collapsible {
+    h2.title {
+      cursor: pointer;
+      background: $collapse url(../images/sprite.png) no-repeat right -3075px;
+      color: $collapseText;
+      font-weight: 600;
+    }
+    &.collapsed {
+      h2.title {
+        background-position: right -3025px;
+      }
+      .content {
+        display: none;
+      }
+    }
+  }
+  
+	section.icons {
+	  text-align: center;
+	  ul {
+	    margin: 0;
+	    padding: 0;
+	    li {
+	      display: inline-block;
+	      text-align: center;
+	      margin: 0;
+	      padding: 0;
+	      margin-right: 30px;
+	      list-style: none;
+	      &.last {
+	        margin-right: 0;
+	      }
+	      a {
+	        font-size: 14px;
+	        span {
+	          background: url(../images/sprite.png);
+	          display: block;
+	          height: 35px;
+	          &.contact {
+	            background-position: left -667px;
+	          }
+	          &.catalog {
+	            background-position: left -705px;
+	          }
+	          &.site {
+	            background-position: left -743px;
+	          }
+	
+	        }
+	      }
+	    }
+	  }
+	}
+}
+
+
+/* Digitale Collecties */
+.digitale-collecties {
+  ul.items {
+    margin: 0;
+    padding: 0;
+    border: none;
+    margin-left: 20px;
+    li.item {
+      margin: 0;
+      padding: 0;
+      list-style: disc;
+      border: none;
+      margin-bottom: 20px;
+      .title {
+        color: $black;
+        font-weight: bold;
+      }
+      .extra {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+/* Tooltips */
+a.tooltipinit {
+  background: url(../images/sprite.png) right -451px;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: -3px;
+  width: 25px;
+  height: 25px;
+  text-indent: -999em;
+  overflow: hidden;
+/*
+  position: absolute;
+  left: 0;
+  top: 0;
+*/
+}
+.tooltip-inner {
+  text-align: left; 
+}
+
+/* Gopress */
+.gopress {
+  ul.icons {
+    margin: 0;
+    padding: 0;
+    li {
+      display: block;
+      background: url(../images/sprite.png) no-repeat;
+      line-height: 30px;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      margin-bottom: 10px;
+      padding-left: 50px;      
+      &.search {
+        background-position: left -792px;
+      }
+      &.profile {
+        background-position: left -836px;
+      }
+      &.read {
+        background-position: left -879px;
+      }
+    }
+  }
+}
+
+/* Eboeken */
+.eboeken {
+  .betaling {
+    background: url(../images/sprite.png) no-repeat left -1200px;
+  }
+  .leentegoed {
+    background: url(../images/sprite.png) no-repeat left -938px;
+    min-height: 40px;
+    padding-left: 70px;
+  }
+  form {
+    margin-bottom: 0;
+    .form-text {
+      margin-right: 15px;
+    }
+  }
+  
+  section.fullwidth {
+    &.blue {
+      background: $ebookBlue;
+      color: $white;
+      margin-bottom: 20px;
+      padding: 20px 0;
+      h2 {
+        color: $ebookYellow;
+        font-weight: lighter;
+      }
+    }
+    .devices {
+      a {
+        display: inline-block;
+        margin-right: 15px;
+        &.last {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+	section.icons {
+    text-align: center;
+    color: $grey;
+    ul {
+      margin: 0;
+      padding: 0;
+      li {
+	      display: inline-block;
+	      text-align: center;
+	      margin: 0;
+	      padding: 0;
+	      margin-right: 30px;
+	      list-style: none;
+	      background: url(../images/sprite.png) no-repeat;
+	      width: 115px;
+	      padding-top: 75px;
+	      &.info {
+	        background-position: left -1934px;
+	      }
+	      &.manual {
+	        background-position: left -2104px;
+	      }
+	      &.questions {
+	        background-position: left -2293px;
+	      }
+	      &.last {
+	        margin-right: 0;
+	      }
+	    }
+	  }
+	}
+}
+
+/* eboeken buy credit*/
+.eboeken-buycredit {
+  table tr {
+    .form-item {
+      margin-bottom: 0px;
+    }
+    td {
+      padding: 5px;
+      &.last {
+        margin-top: 10px;
+      }
+    }
+  }
+}
+
+.eboeken-buycredit table tr {
+  td {
+    padding: 5px;
+  }
+}
+
+/* Consumer pages: "je hebt toegang..." */
+p.access {
+  margin-top: 20px;
+  em {
+    display: block;
+    color: $grey;
+    text-align: left;
+  }
+}
+
+/* Vergeten pagina */
+.bib-eboeken {
+  ul.libraries {
+    margin: 0;
+    padding: 0;
+    li.library {
+      list-style: none;
+    }
+  }
+}
+
+.mijn-bibliotheken {
+  section.library {
+    &.first {
+      padding-top: 20px;
+    }
+    section.messages {
+      padding: 0;
+    }
+    div.actions {
+      text-align: left !important;
+    }
+    ul.items {
+      border: none !important;
+      padding-top: 0 !important;
+      li.item {
+        border: none !important;
+      }
+    }
+  }
+}
+
+/* Pseudo-collapsible */
+.section {
+  .pseudo-collapsible {
+    h2.title {
+      font-weight: 600;
+      background: $collapse;
+      color: $collapseText;
+    }
+  }
+}
+
+/* Info message */
+.infomsg {
+  h1 {
+    color: $blue;
+    line-height: 40px;
+    margin: 0 0 10px 0;
+  }
+  form {
+    margin-bottom: 0;
+  }
+}
+
+.mijn-bibliotheken {
+  .inner {
+    padding-top: 20px;
+  }
+}
+
+/* Pseudo-table */
+.table {
+  .row {
+    margin: 0 !important;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    div {
+      margin: 0 !important;
+      padding: 0 !important;
+    }
+    &.title {
+      font-weight: 600;
+    }
+    &.odd {
+      background: $lightBlue;
+    }
+  }
+}
+
+/*eboeken buycredit page*/
+.text-bancontact {
+  line-height: 38px;
+}
+.icon-bancontact {
+  background-image: url(../images/icons/icon_bancontact.png);
+  display: inline-block;
+  margin-left: 10px;
+  height: 25px;
+  width: 38px;
+}
+
+/* fix cursor chrome/safari forms */
+.form-text, .form-password, .form-email {
+  line-height: normal;
+}
+
+/* Mijn Ovinob */
+ul{
+  &.ola {
+    margin-bottom: 5px;
+    .clear {
+      clear: both;
+    }
+  }
+}
+.ola1 {
+  float: left;
+  width: 50%;
+}
+.ola2 {
+  float: left;
+  width: 50%
+}
+.olasuccess {
+  padding-right: 40px;
+  padding-top: 5px;
+  padding-bottom: 5px;                
+}
+.olaerror {
+  padding-right: 40px;
+  padding-top: 5px;
+  padding-bottom: 5px;                
+}
+
+/* Popup */
+.ui-dialog {
+  .ui-dialog-titlebar {
+    padding: 0px;
+  }
+  .ui-dialog-buttonpane {
+    padding: 0px;
+  }
+}
+.ui-widget-header {
+  background: none;
+  border: none;
+}

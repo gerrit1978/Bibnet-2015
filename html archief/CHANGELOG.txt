@@ -1,0 +1,249 @@
+05.06.2014
+
+1 Algemene preloader
+In bibliotheek-2.html lijn 30 #preloader-general en stylesheets. Staat standaard op display=none dus kan na een klik op 
+aan <a> via javascript geshowed worden.
+
+2 Specifieke preloader
+In bibliotheek-2.html lijnen 102, 108, 117 en 123 en stylesheets. Idem als 1.
+
+3 Error & info blokken stylesheets
+In bibliotheek-2.html <section class="messages"> lijnen 88-92. De blokken gebruiken de standaard rode en blauwe kleur, 
+afhankelijk of het een fout- dan wel een statusboodschap betreft. Was niet aangeleverd door designer dus moet mogelijk 
+nog wat getuned worden.
+
+4 Favicon
+In bibliotheek-2.html lijn 10 (en de bijhorende afbeelding favicon.ico in de map images)
+
+5 Desktop versies
+- aanmelden-1.html extra markup voor (lege) linker zijbalk (let op classes bij lijn 32 en 36)
+- aanmelden-2.html extra markup voor (lege) linker zijbalk 
+- registreer-0.html extra markup voor (lege) linker zijbalk
+- registreer-1.html extra markup voor (lege) linker zijbalk
+- registreer-2.html extra markup voor (lege) linker zijbalk
+- registreer-3.html extra markup voor (lege) linker zijbalk
+
+De extra markup begint steeds op lijn 28 met een lege linker zijbalk: 
+  <div class="col-md-3 sidebar-first">
+	</div> <!-- sidebar-first -->
+Daaronder de rest van de inhoud volgens de grid:
+  <div class="col-md-9 main-content">
+    <div class="inner clearfix">
+	    <div class="col-md-6 alpha omega">
+en de bijhorende sluit-tags uiteraard.
+
+Voor de bibliotheek en profielpagina is de opmaak beperkt gebleven tot de stylesheets.
+
+
+12.06.2014
+
+1 Stylesheet wijzigingen
+2 bibliotheek-2.html: details & links bibliotheek in een aparte <section> gezet (class="bib-details"). Lijnen 88-92. Wordt niet getoond op smartphone.
+
+------------------------------------------------------------------------------------------
+
+23.06.2014
+
+Puntjes uit Google doc zijn genummerd waar minstens mijn naam bij staat, 
+begint bij 1 ("witruimte onderaan pagina's...") 
+en eindigt bij 31 ("algemeen: afbeelding -> responsive...").
+
+1. Witruimte onderaan pagina's
+   Stylesheet is aangepast.
+
+2. Lijntje onder "eboeken"
+   Kan ik niet reproduceren :(
+   
+3. Menu insprong mobile
+   Stylesheet aangepast.
+   
+4. Close button mobile
+   Bibliotheek-2.html (regel 44). <span> is nu absoluut gepositioneerd - opletten bij grote gebruikersnaam.
+   Bibnet.js (regel 10).
+   Stylesheet aangepast en afbeelding toegevoegd.
+
+5. Menu rode lijn (actief item)
+   Stylesheet aangepast voor 2 subniveaus.   
+
+6. Tekst body 16px
+   Dat is toch al zo?
+   
+7. Buttons
+   Stylesheet aangepast.
+
+8. Menu: indenting niveaus gebruikers en bibliotheek (desktop/tablet)
+   Stylesheet aangepast.
+   
+9. Witruimte boven menu (desktop/tablet)
+   Stylesheet aangepast.
+
+10. Paswoord vergeten: knoppen even breed
+    Stylesheet aangepast. Nog niet getest (platte HTML pagina ontbreekt)
+
+11. Profiel gegevens: font-weight
+    Stylesheet aangepast.
+
+12. Whitespace tussen knoppen
+    Stylesheet aangepast.
+
+13. Persoonlijke gegevens aanpassen: kleuren knoppen aanpassen
+    TODO: classes in HTML aanpassen: red wordt blue en vice versa
+
+14. Persoonlijke gegevens aanpassen: opslaan en annuleren even breed
+    Zie 10.: zou aangepast moeten zijn (nog niet getest)
+
+15. Wijzig wachtwoord: kleuren knoppen aanpassen
+    TODO: classes in HTML aanpassen: red wordt blue en vice versa
+
+16. Voeg lidmaatschap toe: kleuren knoppen aanpassen
+    TODO: classes in HTML aanpassen: red wordt blue en vice versa
+
+17. Voeg lidmaatschap toe - ruimte tussen knoppen: Stylesheet aangepast.
+    Icoon van de stappen wordt afgekapt: uncomment de lijn met <li class="step-0"> - is dan uniform met registratie
+
+18. Stappen nu ook met pijltjes op desktop/tablet - idem als smartphone; positionering TBD! Stylesheet aangepast.
+
+19. Uitleenhistoriek witruimte onderaan
+    TODO
+
+20. Detail link
+    24.06. Zie bibnet.js en extra HTML-code in bibliotheek-2.html (regels 167 en volgende).
+
+21. Verwijder lidmaatschap - TODO
+
+22. Voeg lidmaatschap toe - TODO
+
+23. "Te laat": geen link
+    Zie bibliotheek-2.html - regel 113. <span class="late red"> ipv <a href="...">. Stylesheet aangepast.
+    
+24. Kleur boodschap aanpassen: <div class="message info"> ipv <div class="message error">.
+    Openklapbare tekst - TODO
+
+25. TODO (snap het niet)
+
+26. "Ga naar uitleningen en reserveringen" -> tekst aanpassen naar "Ga naar uitleningen", dan wel 1 regel.
+
+27. "Voorwaarden" pagina
+    Zie voorwaarden.html in git repository. <div class="grid-md-6 alpha omega"> mag weg. Stylesheet aangepast voor 
+    achtergrondkleur.
+
+28. TODO
+
+29. Stappen bovenaan? Was dat niet nog TBD
+
+30. TODO (snap het niet)
+
+31. Stylesheet aangepast.
+
+----------------------------------------------------------------
+
+24.06
+
+- footer: HTML in bibliotheek-2.html en stylesheet aangepast (LET OP: HTML lichtjes aangepast na de middag)
+- stappen bovenaan de pagina: stylesheet aangepast; zie registreer-2.html regel 27-36. Regels 232-235 mogen weg.
+- bibliotheek-pagina: link naar contact, bibliotheek staat nu bovenaan onder titel - zie bibliotheek-2.html - regel 40-49. Regels 99-103 mogen weg.
+- mijn bibliotheken-pagina: "verwijder dit lidmaatschap": <a class="link red" /> ipv <a class="red" />. Stylesheet aangepast.
+- mijn bibliotheken-pagina: blauwe achtergrond op desktop & mobile: <div class="message info no-bg" /> ipv <div class="message info" />. Stylesheet aangepast.
+- informatietext op aanmeldpagina: zie aanmelden-1.html. Er zijn wat divs bijgekomen (met class resp-false en resp-true). Javascript bibnet.js is aangepast. Stylesheet is aangepast.
+- popups op mobile: stylesheet is aangepast.
+
+24.6 namiddag
+
+- menu-items moeten grijs worden bij hover: stylesheet aangepast voor mobile/desktop/tablet. Geen HTML-aanpassingen nodig.
+- bibliotheek-pagina: icoontjes onderaan. Zie bibliotheek-2.html, vanaf lijn 175 tot lijn 181. Let op: de <section> "historiek" heeft nu niet meer de class="last". Sprite is veranderd. Stylesheet aangepast.
+
+
+----------------------------------------------------------------
+
+
+25.06
+
+- ipad tablet portrait: registratie - "volgende knop": sprite.png en stylesheet aangepast
+- achtergrond menu transparant maken op mobile: stylesheet aangepast
+- "Vorige" knop bij registreer: zie registreer-1.html (regels 42-44). Extra <div class="form-item"> met <a>. Stylesheet hiervoor ook aangepast.
+
+
+Openstaande oranje puntjes eerste Google Doc:
+
+- Bibliotheek pagina "detail" (pijltje omhoog en omlaag verschijnen): Zie bibnet.js en extra HTML-code in bibliotheek-2.html (regels 163-166 en 170-173).
+
+
+
+
+----------------------------------------------------------------
+
+14.07
+
+0. Donkerder kleur van knoppen als erop geklikt wordt
+- aangepast in stylesheet voor button en submit class="blue"
+
+1. Witruimte weg indien geen menu
+- zie voorwaarden.html: dummy "col-md-3" weg, "col-md-9" veranderen in "col-md-12"
+- h1.title een extra class "full-width" meegeven
+
+2. Velden in formulier "contact" even breed
+- stylesheet aangepast - zie contact.html
+--- Feedback Joeri: op mobile mogen die volgens mij 100% zijn. Ik merkte wel dat een textarea geen 100% was, dit is aangepast in de stylesheet
+
+3. padding toevoegen 
+- graag voorbeeld van waar precies, wat bedoelen ze juist?
+--- Feedback Joeri: stylesheet aangepast, ik weet wel niet of dit browser-compatibel is. In gesimuleerde mobile modus (Firefox) is het ok.
+
+4. bibliotheek-pagina: onderverdeling tussen titels (reserveringen - bib naam) duidelijker
+- stylesheet aangepast
+
+5. gebruiksvoorwaarden: titel te breed
+- stylesheet aangepast (titels voor mobile kleiner gemaakt - probleem kan nog voorkomen bij lange bibnaam ofzo)
+
+6. gebruiksvoorwaarden: link onderaan de pagina centreren
+- stylesheet aangepast
+
+7. menu mobile: "Welkom..." spatie toevoegen
+- stylesheet aangepast
+
+8. menu mobile: bovenste "lege" rij weg
+- stylesheet aangepast
+
+9. menu mobile: laten sluiten als iemand ernaast klikt
+TBD
+
+10. menu mobile: sluitknop verspringt
+- stylesheet aangepast, staat nu mooi tegen de rand
+
+11. registreren: extra stap
+- zie registreer-1.html: gewoon <li class="step step-3"> toevoegen, en als die 3e stap actief is de klasse "<ul class='steps-3'>" gebruiken.
+  Stylesheet aangepast. Sprite aangepast.
+
+12. Voeg een lidmaatschap toe: tekstveld breder
+- stylesheet aangepast - te testen!
+--- Feedback Joeri: Nu ingesteld op 80%. Op mobile laten staan op 90%.
+
+13. Mijn bibliotheken: namen lijken op links
+- vervang class="title" bij de naam door class="lid". Stylesheet aangepast.
+
+14. Mijn bibliotheken: spacing boven messages groter
+- stylesheet aangepast
+
+15. Mijn bibliotheken: gebruikersgegevens toch ook zonder achtergrond
+- stylesheet aangepast
+
+16. Knoppen: consistent gebruik lettergrootte, padding, font-weight
+- stylesheets aangepast - te testen!
+
+17. Knoppen: blauwe knop volledig blauw+witte tekst
+- stylesheets aangepast
+
+18. Knoppen die links mogen worden: x annuleer reservering - x verwijder dit lidmaatschap - x verwijder je mijn bib profiel
+- voeg class="cancel-remove" toe aan de <a> tag. Stylesheet aangepast. Sprite aangepast.
+  Op 'Mijn Bibliotheken' pagina: <a class="cancel-remove"> (dus classes "link red" mogen weg). Doe ook de <br>-tags weg tussen deze en de vorige <a>
+--- Feedback Joeri: padding toegevoegd enz
+
+19. (opmerking 09.07) voeg lidmaatschap toe: invulvelden niet zo breed
+- Te checken: bij mij zijn die even breed als op de vorige pagina (breedte van het formulier is 6 columns)
+--- Voeg bij de <form> tag op de 2 pagina's de class="narrow" toe. Dit beperkt de breedte tot 60%. Stylesheet hiervoor is aangepast.
+
+--. Extra opmerking Joeri: icoontje ">" komt over text bij "volgende" knop
+- Stylesheet aangepast voor desktop. Voor mobile was dit geen issue.
+
+--. Extra opmerking Gerrit: "Voeg lidmaatschap toe" = blijkbaar slechts 2 stappen.
+- Stylesheet en sprite aangepast. Zie pagina "voeg-lidmaatschap-toe.html": <ul> heeft class="max-steps-2".
