@@ -1,0 +1,95 @@
+.main-content.lijsten {
+
+  /* General Styles */
+  h4 {
+    margin-bottom: 1em;
+  }
+  form {
+  	select {
+  		width: 50%;
+  	}
+  }
+  
+  form.add-item, form.add-list {
+    .form-item {
+      &.col-md-3 {
+        padding-left: 0;
+      }
+    }
+  }
+  
+  /* Add an item */
+  form.add-item {
+    ul.books {
+      margin-bottom: 2em;
+      padding: 0;
+      li.book {
+        list-style: none;
+        margin: 0;
+        margin-bottom: 1em;
+        padding: 0;
+        .title {
+          a {
+            color: $blue;
+            font-weight: bolder;
+          }
+        }
+        .author {
+          a {
+            color: $blue;
+          }
+        }
+      }
+    }
+  }
+  
+  /* List table */
+  .table.lijsten {
+    .row {
+      text-align: center;
+      .title {
+        text-align: left;
+      }
+    }
+  }
+  
+  /* List overview */
+  ul.overview-items {
+    padding: 0;
+    margin: 2em 0;
+    li.overview-item {
+      margin: 0;
+      padding: 1em 0;
+      list-style: none;
+      border-top: 1px solid $grey;
+      &.last {
+        border-bottom: 1px solid $grey;
+      }
+      img {
+        max-width: 100%;
+      }
+      .title, .author, .edited, .description {
+        margin-bottom: 0.4em;
+      }
+      .rating {
+        background: url(../images/stars.png) no-repeat left top;
+        height: 18px;
+        &.one {
+          background-position: left -20px;
+        }
+        &.two {
+          background-position: left -42px;
+        }
+        &.three {
+          background-position: left -62px;
+        }
+        &.four {
+          background-position: left -84px;
+        }
+        &.five {
+          background-position: left -105px;
+        }
+      }
+    }
+  }
+}

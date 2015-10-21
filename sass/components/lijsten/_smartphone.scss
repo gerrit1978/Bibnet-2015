@@ -1,0 +1,33 @@
+@media all and (min-width: 320px) and (max-width: 991px) {
+
+  .main-content.lijsten {
+    .table.lijsten {
+      .row {
+        text-align: left;
+      }
+    }
+    
+    form.add-item, form.add-list {
+      .col-md-3, .col-md-5 {
+        padding: 0;
+	  }
+    }
+    
+    select {
+      width: 100% !important;
+    }
+    
+    .button.grey {
+      margin-bottom: 20px;
+    }
+    
+    ul.overview-items {
+      li.overview-item {
+        img {
+          margin-bottom: 20px;
+        }
+      }
+    }
+  } 
+
+}
