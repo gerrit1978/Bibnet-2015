@@ -107,7 +107,7 @@ jQuery(document).ready(function($) {
   });
 
   /* Tooltips */
-  $(".tooltipinit").tooltip();
+/*   $(".tooltipinit").tooltip(); */
 
 
 	
