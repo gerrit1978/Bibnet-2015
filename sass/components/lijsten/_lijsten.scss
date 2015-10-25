@@ -59,7 +59,7 @@
     padding: 0;
     li.overview-item {
       margin: 0;
-      padding: 1em 0;
+      padding: 2em 0;
       list-style: none;
       border-top: 1px solid $grey;
       &.last {
@@ -94,4 +94,65 @@
   }
   
   /* Main page */
+  ul.overview-items {
+    li.overview-item {
+      position: relative;
+      .remove {
+		position: absolute;
+		top: 5px;
+		right: 5px;
+	    a {
+		  text-indent: -999em;		    
+		  display: block;
+	    }
+		width: 20px;
+		height: 20px;
+		background: url(../images/verwijderen.png) no-repeat left top;
+      }
+      .sort {
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+      .status {
+        position: relative;
+        margin-bottom: 50px;
+        width: 100%;
+        ul {
+          background: $bgMainContent;
+          border: 1px solid $grey;
+          position: absolute;
+          z-index: 100;
+		  padding: 0;
+		  width: 100%;
+		  .arrow {
+		    position: absolute;
+		    right: 5px;
+		    top: 10px;
+		    width: 15px;
+		    height: 10px;
+		    text-indent: -999em;
+		    background: url(../images/arrow.png) no-repeat left top;
+		    cursor: pointer;
+		  }
+          li {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            border-bottom: 1px solid white;
+			height: 35px;
+			line-height: 35px;
+			display: none;
+			padding-left: 5px;
+			&.first {
+			  display: block;
+			}
+            &.last {
+              border-bottom: none;
+            }
+          }
+        }
+      }
+    }
+  }
 }
