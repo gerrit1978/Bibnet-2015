@@ -27,6 +27,13 @@
           margin-bottom: 20px;
         }
       }
+      &.sortable {
+        li.overview-item {
+          img {
+            display: none;
+          }
+        }
+      }
     }
   } 
 

@@ -5,7 +5,14 @@ jQuery(document).ready(function($) {
 
   // Status
   $('.overview-items .status ul .arrow').click(function(e) {
-	$('.overview-items .status ul li').show();
+    var list = $(this).parent();
+    if (list.hasClass('open')) {
+      list.removeClass('open');
+      list.find('li').not('.first').hide();
+    } else {
+      list.addClass('open');
+      list.find('li').show();
+    }
   });
 
 });
