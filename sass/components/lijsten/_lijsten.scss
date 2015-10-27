@@ -71,25 +71,6 @@
       .title, .author, .edited, .description {
         margin-bottom: 0.4em;
       }
-      .rating {
-        background: url(../images/stars.png) no-repeat left top;
-        height: 18px;
-        &.one {
-          background-position: left -20px;
-        }
-        &.two {
-          background-position: left -42px;
-        }
-        &.three {
-          background-position: left -62px;
-        }
-        &.four {
-          background-position: left -84px;
-        }
-        &.five {
-          background-position: left -105px;
-        }
-      }
     }
   }
   
@@ -110,9 +91,13 @@
 		background: url(../images/verwijderen.png) no-repeat left top;
       }
       .sort {
+        cursor: pointer;
         position: absolute;
-        top: 0;
-        left: 0;
+        top: 5px;
+        left: 5px;
+        width: 20px;
+        height: 20px;
+        background: url(../images/dragndrop.png) no-repeat left top;
       }
       .status {
         position: relative;

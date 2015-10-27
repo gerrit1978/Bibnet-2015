@@ -14,5 +14,16 @@ jQuery(document).ready(function($) {
       list.find('li').show();
     }
   });
+  
+  $('.overview-items .status ul li a').click(function(e) {
+    $(this).parent().parent().parent().parent().parent().find('.message').html('<strong>Vergeet dit item niet te raten!</strong>');
+  });
+  
+  // Raty
+  $('.rating').raty({
+    half      : true,
+    size      : 24,
+    path      : 'javascripts/raty/images'
+  });
 
 });

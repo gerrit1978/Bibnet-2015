@@ -35,6 +35,15 @@
         }
       }
     }
+    
+    ul.overview-items {
+      li.overview-item {
+        .status {
+          top: -40px !important;
+        }
+      }
+    }
+
   } 
 
 }
