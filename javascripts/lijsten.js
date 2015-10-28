@@ -23,7 +23,10 @@ jQuery(document).ready(function($) {
   $('.rating').raty({
     half      : true,
     size      : 24,
-    path      : 'javascripts/raty/images'
+    path      : 'javascripts/raty/images',
+    score     : function() {
+     			  return $(this).attr('data-score');
+     			}
   });
 
 });
