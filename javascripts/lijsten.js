@@ -29,4 +29,17 @@ jQuery(document).ready(function($) {
      			}
   });
 
+  // Raty read only
+  $('.rating-read-only').raty({
+    half      : true,
+    size      : 24,
+    readOnly : true,
+    path      : 'javascripts/raty/images',
+    score     : function() {
+     			  return $(this).attr('data-score');
+     			}
+  });
+
+
+
 });
