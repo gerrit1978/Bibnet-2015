@@ -114,8 +114,9 @@
 	         <p><a href="#">+ Zoek titel om toe te voegen (Kris Lambert)</a></p>
 	         <p><input type="checkbox" />&nbsp;Maak mijn lijst publiek (genereert een url om te delen)</p>
 	         <p class="tabs">Getoonde bibs: <span class="active">Alle</span> | <a href="#">De Wattenfabriek (2)</a> | <a href="#">Kris Lambert (2)</a></p>
-				<ul class="overview-items sortable">
-				  <li class="overview-item clearfix first">
+				<ul class="overview-items list-detail sortable">
+				  <li class="overview-item clearfix first" id="item-1">
+					<input type="hidden" name="status" value="todo" />				  
 				    <div class="remove"><a href="#">verwijderen</a></div>
 				    <div class="sort">&nbsp;</div>
 				    <div class="col-md-2">
@@ -131,15 +132,19 @@
 					  <div class="status">
 					    <ul>
 					      <div class="arrow">></div>
-					      <li class="first">Te lezen</li>
-					      <li class="last"><a href="#">Gelezen</a></li>
+					      <li class="current-status">Te lezen</li>
+					      <li class="first"><a href="#" class="toggle-status" data-delta="1" data-target="todo">Te lezen</a></li>
+					      <li class="last"><a href="#" class="toggle-status" data-delta="1" data-target="done">Gelezen</a></li>
 					    </ul>
 					  </div>
 					  <div class="available"><a href="#" class="button blue">Beschikbaar?</a></div>
-				      <div class="rating">&nbsp;</div>
+					  <div class="rating-wrapper">Hoeveel sterren geef je dit boek?
+				        <div class="rating">&nbsp;</div>
+				      </div>
 				    </div>
 				  </li>
-				  <li class="overview-item clearfix">
+				  <li class="overview-item clearfix" id="item-2">
+				    <input type="hidden" name="status" value="done" />				  
 				    <div class="remove"><a href="#">verwijderen</a></div>
 				    <div class="sort">&nbsp;</div>
 				    <div class="col-md-2">
@@ -155,15 +160,19 @@
 					  <div class="status">
 					    <ul>
 					      <div class="arrow">></div>
-					      <li class="first">Gelezen</li>
-					      <li class="last"><a href="#">Te lezen</a></li>
+					      <li class="current-status">Gelezen</li>
+					      <li class="first"><a href="#" class="toggle-status" data-delta="2" data-target="todo">Te lezen</a></li>
+					      <li class="last"><a href="#" class="toggle-status" data-delta="2" data-target="done">Gelezen</a></li>
 					    </ul>
 					  </div>
 					  <div class="available"><a href="#" class="button blue">Beschikbaar?</a></div>
-				      <div class="rating">&nbsp;</div>
+					  <div class="rating-wrapper">Hoeveel sterren geef je dit boek?
+				        <div class="rating">&nbsp;</div>
+				      </div>
 				    </div>
 				  </li>
-				  <li class="overview-item clearfix last">
+				  <li class="overview-item clearfix last" id="item-3">
+                    <input type="hidden" name="status" value="todo" />				  
 				    <div class="remove"><a href="#">verwijderen</a></div>
 				    <div class="sort">&nbsp;</div>
 				    <div class="col-md-2">
@@ -179,13 +188,15 @@
 					  <div class="status">
 					    <ul>
 					      <div class="arrow">></div>
-					      <li class="first">Te lezen</li>
-					      <li class="last"><a href="#">Gelezen</a></li>
+					      <li class="current-status">Te lezen</li>
+					      <li class="first"><a href="#" class="toggle-status" data-delta="3" data-target="todo">Te lezen</a></li>
+					      <li class="last"><a href="#" class="toggle-status" data-delta="3" data-target="done">Gelezen</a></li>
 					    </ul>
 					  </div>
 					  <div class="available"><a href="#" class="button blue">Beschikbaar?</a></div>
-					  <div class="rating-wrapper" style="border: 1px solid white;"><div class="rating">&nbsp;</div>
-				      <span class="text">Hoeveel sterren geeft u dit boek?</span>
+					  <div class="rating-wrapper">Hoeveel sterren geef je dit boek?
+				        <div class="rating">&nbsp;</div>
+				      </div>
 				    </div>
 			    
 				  </li>

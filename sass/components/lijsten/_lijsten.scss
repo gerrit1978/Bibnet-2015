@@ -87,6 +87,9 @@
   ul.overview-items {
     li.overview-item {
       position: relative;
+      .rating-wrapper {
+        font-weight: bold;
+      }
       .remove {
 		position: absolute;
 		top: 5px;
@@ -108,6 +111,45 @@
         height: 15px;
         background: url(../images/dragndrop.png) no-repeat left top;
       }
+      .available {
+        margin-top: 45px;
+      }
+      .status {
+        position: absolute;
+        z-index: 10000;
+        background: $bgMainContent;
+        border: none;
+        right: 5px;
+        margin-bottom: 50px;
+        width: 100%;
+        height: 35px;
+        overflow: hidden;
+        ul {
+          padding-left: 5px;
+          li {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+			height: 35px;
+			line-height: 35px;
+			padding-left: 15px;
+			&.first {
+			  display: block;
+			}
+	      }
+          .arrow {
+		    position: absolute;
+		    right: 5px;
+		    top: 10px;
+		    width: 15px;
+		    height: 10px;
+		    text-indent: -999em;
+		    background: url(../images/arrow.png) no-repeat left top;
+		    cursor: pointer;
+          }
+        }
+      }
+/*
       .status {
         position: relative;
         margin-bottom: 50px;
@@ -151,7 +193,15 @@
           }
         }
       }
+*/
     }
+  }
+  
+  /* Main page list detail */
+  ul.overview-items.list-detail {
+	.rating-wrapper {
+	  display: none;
+	}
   }
 }
 
