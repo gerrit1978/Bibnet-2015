@@ -79,12 +79,15 @@ $(document).ready(function() {
     
     // set new status in frontend and toggle visibility of rating
     if (newStatus == "todo") {
-      var html = "Te lezen";
+      var html = "<span>Te lezen</span>";
       $(id).find('.rating-wrapper').hide();
     }
     if (newStatus == "done") {
-      var html = "Gelezen";
+      var html = "<span>Gelezen</span>";
       $(id).find('.rating-wrapper').show();
+      // do Popup here!
+      $("body").popup();
+      alert('popup zal hier worden getoond');
     }
     $(id).find('li.current-status').html(html);
     
@@ -92,11 +95,7 @@ $(document).ready(function() {
     var selectorLinks = id + " .status ul li";
     $(selectorLinks).show();
     $(this).parent().hide();
-    
-    // adjust height
-    var selectorDiv = id + " .status";
-    $(selectorDiv).height(35).css('border', 'none');
-    
+
     /*
      * Erwin, do AJAX call HERE
      */
@@ -104,7 +103,7 @@ $(document).ready(function() {
   });
   
   // 3. Toggle visibility 
-  $('.overview-items .status ul .arrow').click(function(e) {
+  $('.overview-items .status ul li').click(function(e) {
     var div = $(this).parent().parent();
     var currentHeight = $(div).height();
     if (currentHeight == 35) {
@@ -112,9 +111,18 @@ $(document).ready(function() {
     } else {
       $(div).height(35).css('border', 'none');
     }
-    console.log($(this).parent().parent().height());
-    $(this).parent('.status').hide();
     e.preventDefault();
+  });
+  
+  // 4. When the arrow is clicked, toggle height
+  $('.overview-items .status ul .arrow').click(function(e) {
+    var div = $(this).parent().parent();
+    var currentHeight = $(div).height();
+    if (currentHeight == 35) {
+      $(div).height(70).css('border', '1px solid white');
+    } else {
+      $(div).height(35).css('border', 'none');
+    }
   });
 
 });
