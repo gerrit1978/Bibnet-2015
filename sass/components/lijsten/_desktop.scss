@@ -1,0 +1,14 @@
+@media all and (min-width: 992px) {
+
+	/* Popup */
+	.lijsten {
+	  ul.overview-items {
+	    li.overview-item {
+	      .popup {
+            top: 150px;
+	      }
+	    }
+	  }
+	}
+
+}

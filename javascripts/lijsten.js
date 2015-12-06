@@ -85,9 +85,8 @@ $(document).ready(function() {
     if (newStatus == "done") {
       var html = "<span>Gelezen</span>";
       $(id).find('.rating-wrapper').show();
+      $(id).find('.popup').fadeIn().delay(2000).fadeOut();
       // do Popup here!
-      $("body").popup();
-      alert('popup zal hier worden getoond');
     }
     $(id).find('li.current-status').html(html);
     
